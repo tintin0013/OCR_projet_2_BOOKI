@@ -1,0 +1,84 @@
+body {
+    font-family: Raleway;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header nav ul {
+display: flex;
+list-style-type: none;
+}
+
+
+header nav ul li {
+    padding: 50px 25px;
+    border-top: 4px solid transparent;
+    margin: 0px 20px 0px 20px;
+}
+
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/*filtres*/
+
+#filtre {
+    display: flex;
+    align-items: center;
+}
+
+
+#filtre .box-filtre{
+    border: 2px solid grey;
+    border-radius: 30px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+#filtre .box-filtre i {
+    background-color: #74a3e9;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 100%;
+    color: #0065FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#filtre .box-filtre .text {
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+/*INFOS*/
+
+.info {
+    display: flex;
+}
+
+
+.info .fas.fa-info {
+    color: #0065FC;
+    font-size: 15px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
