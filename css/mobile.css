@@ -1,5 +1,5 @@
 body {
-    padding: 0px 20px;
+    padding: 0px;
 }
 
 /* HEADER */
@@ -28,6 +28,10 @@ header nav ul {
 
 /* RECHERCHE */
 
+.presentation {
+    padding-left: 20px;
+}
+
 .barre-recherche button {
     border-radius: 15px;
 }
@@ -49,10 +53,15 @@ header nav ul {
 #filtre {
     align-items: flex-start;
     flex-wrap: wrap;
+    padding-left: 20px;
 }
 
 #filtre .lien-filtre {
    flex-wrap: wrap;
+}
+
+.info {
+    padding-left: 20px;
 }
 
 /* HEBERGEMENTS */
@@ -78,6 +87,9 @@ header nav ul {
     order: 1;
     width: 100%;
 }
+
+#hebergement .populaire .carte {
+border-radius: 0;}
 
 #hebergement .marseille .liste-hebergement {
    flex-direction: column;
@@ -106,6 +118,7 @@ header nav ul {
 
 #activite .liste-activite .colonne {
     width: 95%;
+    padding-right: 20px;
 }
 
 #activite .liste-activite  img {
@@ -121,4 +134,12 @@ header nav ul {
 
 footer {
     flex-direction: column;
+    padding-right: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.colonne {
+    width: 100%;
+    padding-left: 25px;
 }

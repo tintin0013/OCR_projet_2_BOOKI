@@ -37,6 +37,7 @@
 
 footer {
   justify-content: space-between;
+  margin-bottom: 0;
 }
 
 footer .colonne {

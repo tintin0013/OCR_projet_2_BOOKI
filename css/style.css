@@ -53,7 +53,7 @@ p .bolt {
 .header nav ul li {
   padding: 50px 25px;
   border-top: 2px solid transparent;
-  margin: 0px 20px 0px 20px;
+  margin: 0;
 }
 
 .header nav ul li:hover {
@@ -140,6 +140,7 @@ p .bolt {
 }
 
 #filtre .box-filtre {
+    width: max-content;
   border: 2px solid #f2f2f2;
   border-radius: 30px;
   margin-left: 10px;
