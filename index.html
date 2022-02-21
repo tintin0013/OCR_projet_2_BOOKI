@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,48 +17,45 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="/css/tablette.css"
+      href="./css/tablette.css"
       media="screen and (max-width: 992px)"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="/css/mobile.css"
+      href="./css/mobile.css"
       media="screen and (max-width: 768px)"
     />
     <title>Booki</title>
   </head>
   <body>
-    <!--
 
-          HEADER
+    <!-- HEADER -->
 
-        -->
-    <header>
+    <header class="header">
       <div id="logo">
         <img src="./images/logo/Booki.png" alt="Logo Booki" class="logo" />
       </div>
       <nav>
-        <ul>
-          <li><a href="#hebergement">Hébergements </a></li>
-          <li><a href="#activite">Activités </a></li>
+        <ul class="menu">
+          <li class="heberg"><a href="#hebergement">Hébergements </a></li>
+          <li class="acti"><a href="#activite">Activités </a></li>
         </ul>
       </nav>
     </header>
-    <!--
 
-         FILTRE
+    <!-- FILTRE -->
 
-        -->
     <main>
       <section>
         <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-        <span class="sous-titre"
-          >En plein centre ville ou en pleine nature</span>
+        <span class="sous-titre gris"
+          >En plein centre ville ou en pleine nature</span
+        >
         <div class="barre-recherche">
           <i class="fas fa-map-marker-alt fa-lg"></i>
           <input type="text" name="ville" placeholder="Marseille,France" />
@@ -67,37 +64,35 @@
       </section>
       <section id="filtre">
         <h3>Filtres</h3>
-        <span class="box-filtre">
-          <i class="fas fa-money-bill-wave"></i>
-          <p class="text">Economiques</p>
-        </span>
-        <span class="box-filtre">
-          <i class="fas fa-child fa-lg"></i>
-          <p class="text">Familial</p>
-        </span>
-        <span class="box-filtre">
-          <i class="fas fa-heart"></i>
-          <p class="text">Romantique</p>
-        </span>
-        <span class="box-filtre">
-          <i class="fas fa-dog"></i>
-          <p class="text">Animaux autorisés</p>
-        </span>
+        <div class="lien-filtre">
+          <span class="box-filtre">
+            <i class="fas fa-money-bill-wave"></i>
+            <span class="text">Economiques</span>
+          </span>
+          <span class="box-filtre">
+            <i class="fas fa-child fa-lg"></i>
+            <span class="text">Familial</span>
+          </span>
+          <span class="box-filtre">
+            <i class="fas fa-heart"></i>
+            <span class="text">Romantique</span>
+          </span>
+          <span class="box-filtre">
+            <i class="fas fa-dog"></i>
+            <span class="text">Animaux autorisés</span>
+          </span>
+        </div>
       </section>
-
-      <p class="info">
+      <p class="info gris">
         <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans
-        cette ville
-      </p>
-      <!--
+        cette ville </p>
 
-          HEBERGEMENTS
+      <!-- HEBERGEMENTS -->
 
-        -->
       <div id="hebergement">
         <section class="marseille">
           <div class="carte">
-            <h2>Hébergements a Marseille</h2>
+            <h2>Hébergements à Marseille</h2>
             <div class="liste-hebergement">
               <a href="#">
                 <article>
@@ -108,7 +103,7 @@
                   />
                   <div class="contenu-article">
                     <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de 25€</p>
+                    <p>Nuit à partir de <span class="bolt">25</span>€</p>
                     <div class="note">
                       <i class="fas fa-star blue"></i>
                       <i class="fas fa-star blue"></i>
@@ -188,7 +183,7 @@
                   />
                   <div class="contenu-article">
                     <h3>Auberge le Panier</h3>
-                    <p>Nuit à partir de 23€</p>
+                    <p>Nuit à partir de<span class="bolt">23</span> €</p>
                     <div class="note">
                       <i class="fas fa-star blue"></i>
                       <i class="fas fa-star blue"></i>
@@ -223,11 +218,9 @@
             <span class="sous-titre">Afficher plus</span>
           </div>
         </section>
-        <!--
 
-          LES PLUS POPULAIRES
+        <!-- LES PLUS POPULAIRES -->
 
-        -->
         <section class="populaire">
           <div class="carte">
             <h2>Les plus populaires</h2>
@@ -305,83 +298,90 @@
           </div>
         </section>
       </div>
-      <!--
-        
-          ACTIVITES
 
-        -->
+      <!-- ACTIVITES -->
+
       <section id="activite">
         <h2>Activités à Marseille</h2>
         <div class="liste-activite">
           <div class="colonne">
-            <article>
+            <article class="normal">
               <img
                 src="./images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                 alt="photo du vieux port"
                 title="Le Vieux Port"
               />
-              <h3>Vieux Port</h3>
+              <div class="titre">
+                <h3>Vieux Port</h3>
+              </div>
             </article>
           </div>
-          <div class="colonne double">
-            <article>
+          <div class="colonne">
+            <article class="grande">
               <img
                 src="./images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                 alt="Fort de Pomègues"
                 title="Fort de Pomègues"
               />
-              <h3>Fort de Pomègues</h3>
+              <div class="titre">
+                <h3>Fort de Pomègues</h3>
+              </div>
             </article>
-            <article>
+            <article class="petite">
               <img
                 src="./images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                 alt="Iles du Frioul"
                 title="Iles du Frioul"
               />
-              <h3>Iles du Frioul</h3>
+              <div class="titre">
+                <h3>Iles du Frioul</h3>
+              </div>
             </article>
           </div>
-
           <div class="colonne">
-            <article>
+            <article class="normal">
               <img
                 src="./images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                 alt="Parc national des Calanques"
                 title="Parc national des Calanques"
               />
-              <h3>Parc national des Calanques</h3>
+              <div class="titre">
+                <h3>Parc national des Calanques</h3>
+              </div>
             </article>
           </div>
-          <div class="colonne double">
-            <article>
+          <div class="colonne">
+            <article class="moyenne">
               <img
                 src="./images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                 alt="Notre-Dame_de-la-Garde"
                 title="Notre-Dame_de-la-Garde"
               />
-              <h3>Notre-Dame-de-la-Garde</h3>
+              <div class="titre">
+                <h3>Notre-Dame-de-la-Garde</h3>
+              </div>
             </article>
-            <article>
+            <article class="moyenne">
               <img
                 src="./images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                 alt="Parc LongChamp"
                 title="Parc LongChamp"
               />
-              <h3>Parc LongChamp</h3>
+              <div class="titre">
+                <h3>Parc LongChamp</h3>
+              </div>
             </article>
           </div>
         </div>
       </section>
     </main>
-    <!--
 
-          FOOTER
+    <!-- FOOTER -->
 
-        -->
     <footer>
       <div class="colonne">
         <h2>A propos</h2>
-        <ul>
+        <ul class="gris">
           <li>
             <a href="#">Fonctionnement de site</a>
           </li>

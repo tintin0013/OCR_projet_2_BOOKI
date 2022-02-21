@@ -1,0 +1,44 @@
+/* RECHERCHE */
+
+.barre-recherche {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+/* FILTRE */
+
+#filtre {
+  flex-wrap: wrap;
+}
+
+
+/* HEBERGEMENTS */
+
+#hebergement {
+  display: flex;
+  flex-direction: column;
+}
+
+#hebergement .marseille,
+#hebergement .populaire {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* ACTIVITES */
+
+#activite {
+  padding-top: 40px;
+  width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+  justify-content: space-between;
+}
+
+footer .colonne {
+  width: auto;
+}
