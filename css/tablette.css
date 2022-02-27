@@ -12,6 +12,15 @@
   flex-wrap: wrap;
 }
 
+#filtre .box-filtre {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+#filtre .lien-filtre {
+    flex-wrap: wrap;
+ }
+
 
 /* HEBERGEMENTS */
 
