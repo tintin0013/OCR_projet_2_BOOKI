@@ -13,8 +13,8 @@ body {
 }
 
 .header nav ul {
-    margin: 0px -20px;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .header nav ul li {
@@ -124,7 +124,6 @@ border-radius: 0;}
 
 #activite .liste-activite .colonne {
     width: 95%;
-    padding-right: 20px;
 }
 
 #activite .liste-activite  img {
@@ -145,7 +144,6 @@ footer {
     width: 100%;
 }
 
-.colonne {
-    width: 100%;
+footer .colonne {
     padding-left: 25px;
 }

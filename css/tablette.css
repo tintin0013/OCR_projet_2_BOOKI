@@ -1,3 +1,6 @@
+.header nav ul {
+margin: 0;}
+
 /* RECHERCHE */
 
 .barre-recherche {
@@ -40,6 +43,9 @@
 #activite {
   padding-top: 40px;
   width: 100%;
+}
+.colonne {
+  padding: 0;
 }
 
 /* FOOTER */
